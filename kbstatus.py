@@ -132,7 +132,7 @@ class StatusReport:
         self.name = name
         self.keyboard = keyboard
 
-        self.row_format ="{:<20}" * 2
+        self.row_format ="{:<35}" * 2
 
         self.prev_finger = None
         self.prev_char = None
@@ -171,19 +171,20 @@ class StatusReport:
     def print_status(self):
         print()
         print('-------------{0}-------------'.format(self.name))
-        print(self.row_format.format('No Movements', self.moves['none']))
+        print(self.row_format.format('No Movements Needed', self.moves['none']))
         print(self.row_format.format('Finger Movements', self.finger_movement_count))
-        print(self.row_format.format('Same Finger Use', self.same_finger_use))
+        print(self.row_format.format('Same Finger Usege', self.same_finger_use))
 
-        print(self.row_format.format('Up',self.moves['top']))
-        print(self.row_format.format('Down',self.moves['bottom']))
-        print(self.row_format.format('Left',self.moves['left']))
-        print(self.row_format.format('Right',self.moves['right']))
+        print()
+        print(self.row_format.format('Finger Up Movement',self.moves['top']))
+        print(self.row_format.format('Finger Down Movement',self.moves['bottom']))
+        print(self.row_format.format('Finger Left Movement',self.moves['left']))
+        print(self.row_format.format('Finger Right Movement',self.moves['right']))
         
-        print(self.row_format.format('Top Right',self.moves['top right']))
-        print(self.row_format.format('Top Left',self.moves['top left']))
-        print(self.row_format.format('Bottom Right ',self.moves['bottom right']))
-        print(self.row_format.format('Bottom Left',self.moves['bottom left']))
+        print(self.row_format.format('Finger Top Right Movement',self.moves['top right']))
+        print(self.row_format.format('Finger Top Left Movement',self.moves['top left']))
+        print(self.row_format.format('Finger Bottom Right  Movement',self.moves['bottom right']))
+        print(self.row_format.format('Finger Bottom Left Movement',self.moves['bottom left']))
 
 
 
