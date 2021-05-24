@@ -171,7 +171,7 @@ class StatusReport:
     def print_status(self):
         print()
         print('-------------{0}-------------'.format(self.name))
-        print(self.row_format.format('No Movements', self.finger_movement_count))
+        print(self.row_format.format('No Movements', self.moves['none']))
         print(self.row_format.format('Finger Movements', self.finger_movement_count))
         print(self.row_format.format('Same Finger Use', self.same_finger_use))
 
@@ -192,8 +192,8 @@ def main():
     layouts: List[StatusReport] = [
         StatusReport('QWERTY', KeyboardFactory.get_layout('qwerty')),
         StatusReport('DVORAK', KeyboardFactory.get_layout('dvorak')),
+        StatusReport('WORKMAN', KeyboardFactory.get_layout('workman')),
         StatusReport('COLEMAK', KeyboardFactory.get_layout('colemak')),
-        StatusReport('WORKMAN', KeyboardFactory.get_layout('workman'))
     ]
 
     for line in sys.stdin:
