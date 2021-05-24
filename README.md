@@ -38,56 +38,67 @@ echo hello | python kbstatus.py
 cat <path to project root>/**/*.js | python kbstatus.py
  ```
 ## Sample outout
+
+No Movements Needed - No movement needed to type the characters because finger already should be on the key
+Finger Movements - Need to move the finger before typing
+Same Finger Use - Same finger is used to type different letters ("lo" in "hello" with qwerty)
+
+
 ```
 -------------QWERTY-------------
-No Movements        9786
-Finger Movements    32852
-Same Finger Use     3198
-Up                  18583
-Down                4434
-Left                685
-Right               1148
-Top Right           3651
-Top Left            638
-Bottom Right        883
-Bottom Left         2830
+No Movements Needed                9786
+Finger Movements                   32852
+Same Finger Usege                  3198
+
+Finger Up Movement                 18583
+Finger Down Movement               4434
+Finger Left Movement               685
+Finger Right Movement              1148
+Finger Top Right Movement          3651
+Finger Top Left Movement           638
+Finger Bottom Right  Movement      883
+Finger Bottom Left Movement        2830
 
 -------------DVORAK-------------
-No Movements        21754
-Finger Movements    20884
-Same Finger Use     2105
-Up                  10014
-Down                3216
-Left                1268
-Right               3597
-Top Right           638
-Top Left            773
-Bottom Right        495
-Bottom Left         883
+No Movements Needed                21754
+Finger Movements                   20884
+Same Finger Usege                  2105
+
+Finger Up Movement                 10014
+Finger Down Movement               3216
+Finger Left Movement               1268
+Finger Right Movement              3597
+Finger Top Right Movement          638
+Finger Top Left Movement           773
+Finger Bottom Right  Movement      495
+Finger Bottom Left Movement        883
 
 -------------WORKMAN-------------
-No Movements        23961
-Finger Movements    18677
-Same Finger Use     2062
-Up                  9288
-Down                5534
-Left                638
-Right               1148
-Top Right           883
-Top Left            142
-Bottom Right        888
-Bottom Left         156
+No Movements Needed                23961
+Finger Movements                   18677
+Same Finger Usege                  2062
+
+Finger Up Movement                 9288
+Finger Down Movement               5534
+Finger Left Movement               638
+Finger Right Movement              1148
+Finger Top Right Movement          883
+Finger Top Left Movement           142
+Finger Bottom Right  Movement      888
+Finger Bottom Left Movement        156
 
 -------------COLEMAK-------------
-No Movements        26739
-Finger Movements    15899
-Same Finger Use     1471
-Up                  7183
-Down                4434
-Left                685
-Right               1268
-Top Right           1148
-Top Left            142
-Bottom Right        883
-Bottom Left         156
+No Movements Needed                26739
+Finger Movements                   15899
+Same Finger Usege                  1471
+
+Finger Up Movement                 7183
+Finger Down Movement               4434
+Finger Left Movement               685
+Finger Right Movement              1268
+Finger Top Right Movement          1148
+Finger Top Left Movement           142
+Finger Bottom Right  Movement      883
+Finger Bottom Left Movement        156
+
 ```
