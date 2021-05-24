@@ -19,7 +19,9 @@ Supported keyboard layouts are
 
 * Python 3
 
-## How to use
+## How to use (on Linux)
+I have no idea how to use this on other platforms. I will let you figure out
+that XD
 
 * Clone the project or download `kbstatus.py` file
 * Run the script on text
