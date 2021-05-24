@@ -37,7 +37,7 @@ echo hello | python kbstatus.py
  ```bash
 cat <path to project root>/**/*.js | python kbstatus.py
  ```
-# Sample outout
+## Sample outout
 ```
 -------------QWERTY-------------
 No Movements        9786
