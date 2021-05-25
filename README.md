@@ -1,7 +1,7 @@
 # Keyboard Layout Status
 
 Calculates the number of finger movements required to type something using
-different keyboard layouts
+different keyboard layouts.
 
 I was obsessed with different keyboard layouts. Like everyone else, I wanted to
 find the ULTIMATE keyboard layout. Well, It's not that easy, so I wrote a Python
@@ -87,6 +87,20 @@ Finger Top Left Movement           142
 Finger Bottom Right  Movement      888
 Finger Bottom Left Movement        156
 
+-------------HALMAK-------------
+No Movements Needed                23961
+Finger Movements                   18677
+Same Finger Usege                  2406
+
+Finger Up Movement                 9840
+Finger Down Movement               7676
+Finger Left Movement               0
+Finger Right Movement              0
+Finger Top Right Movement          13
+Finger Top Left Movement           0
+Finger Bottom Right  Movement      0
+Finger Bottom Left Movement        1148
+
 -------------COLEMAK-------------
 No Movements Needed                26739
 Finger Movements                   15899
@@ -100,5 +114,4 @@ Finger Top Right Movement          1148
 Finger Top Left Movement           142
 Finger Bottom Right  Movement      883
 Finger Bottom Left Movement        156
-
 ```
