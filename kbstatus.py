@@ -117,6 +117,13 @@ class KeyboardFactory:
                 ["z", "x", "c", "v", "b", "k", "m", ",", ".", "/"]
             ])
 
+        if layout == 'halmak':
+            return KeyboardBuilder().build([
+                ["w", "l", "r", "b", "z", ";", "q", "u", "d", "j"],
+                ["s", "h", "n", "t", ",", ".", "a", "e", "o", "i"],
+                ["f", "m", "v", "c", "/", "g", "p", "x", "k", "y"]
+            ])
+
         if layout == 'workman':
             return KeyboardBuilder().build([
                 ["q", "d", "r", "w", "b", "j", "f", "u", "p", ";"],
@@ -194,6 +201,7 @@ def main():
         StatusReport('QWERTY', KeyboardFactory.get_layout('qwerty')),
         StatusReport('DVORAK', KeyboardFactory.get_layout('dvorak')),
         StatusReport('WORKMAN', KeyboardFactory.get_layout('workman')),
+        StatusReport('HALMAK', KeyboardFactory.get_layout('halmak')),
         StatusReport('COLEMAK', KeyboardFactory.get_layout('colemak')),
     ]
 
