@@ -45,73 +45,16 @@ Same Finger Use - Same finger is used to type different letters ("lo" in "hello"
 
 
 ```
--------------QWERTY-------------
-No Movements Needed                9786
-Finger Movements                   32852
-Same Finger Usege                  3198
-
-Finger Up Movement                 18583
-Finger Down Movement               4434
-Finger Left Movement               685
-Finger Right Movement              1148
-Finger Top Right Movement          3651
-Finger Top Left Movement           638
-Finger Bottom Right  Movement      883
-Finger Bottom Left Movement        2830
-
--------------DVORAK-------------
-No Movements Needed                21754
-Finger Movements                   20884
-Same Finger Usege                  2105
-
-Finger Up Movement                 10014
-Finger Down Movement               3216
-Finger Left Movement               1268
-Finger Right Movement              3597
-Finger Top Right Movement          638
-Finger Top Left Movement           773
-Finger Bottom Right  Movement      495
-Finger Bottom Left Movement        883
-
--------------WORKMAN-------------
-No Movements Needed                23961
-Finger Movements                   18677
-Same Finger Usege                  2062
-
-Finger Up Movement                 9288
-Finger Down Movement               5534
-Finger Left Movement               638
-Finger Right Movement              1148
-Finger Top Right Movement          883
-Finger Top Left Movement           142
-Finger Bottom Right  Movement      888
-Finger Bottom Left Movement        156
-
--------------HALMAK-------------
-No Movements Needed                23961
-Finger Movements                   18677
-Same Finger Usege                  2406
-
-Finger Up Movement                 9840
-Finger Down Movement               7676
-Finger Left Movement               0
-Finger Right Movement              0
-Finger Top Right Movement          13
-Finger Top Left Movement           0
-Finger Bottom Right  Movement      0
-Finger Bottom Left Movement        1148
-
--------------COLEMAK-------------
-No Movements Needed                26739
-Finger Movements                   15899
-Same Finger Usege                  1471
-
-Finger Up Movement                 7183
-Finger Down Movement               4434
-Finger Left Movement               685
-Finger Right Movement              1268
-Finger Top Right Movement          1148
-Finger Top Left Movement           142
-Finger Bottom Right  Movement      883
-Finger Bottom Left Movement        156
+|#                   |QWERTY    |DVORAK    |WORKMAN   |HALMAK    |COLEMAK
+|No Finger Movements |9786      |21754     |23961     |23961     |26739
+|Finger Movements    |32852     |20884     |18677     |18677     |15899
+|Same Finger Usage   |3198      |2105      |2062      |2406      |1471
+|Up                  |18583     |10014     |9288      |9840      |7183
+|Down                |4434      |3216      |5534      |7676      |4434
+|Left                |685       |1268      |638       |0         |685
+|Right               |1148      |3597      |1148      |0         |1268
+|Top Right           |3651      |638       |883       |13        |1148
+|Top Left            |638       |773       |142       |0         |142
+|Bottom Right        |883       |495       |888       |0         |883
+|Bottom Left         |2830      |883       |156       |1148      |156
 ```
