@@ -27,7 +27,7 @@ that XD
 * Run the script on text
 
 ```bash
-echo hello | python kbstatus.py
+echo hello | python src/kbstatus/keyboard.py
 ```
 
 * On Linux, if you want to run the status on multiple file content, pipe the
@@ -35,9 +35,9 @@ echo hello | python kbstatus.py
   projects, use following.
 
  ```bash
-cat <path to project root>/**/*.js | python kbstatus.py
+cat <path to project root>/**/*.js | python src/kbstatus/keyboard.py
  ```
-## Sample outout
+## Sample output
 
 No Movements Needed - No movement needed to type the characters because finger already should be on the key
 Finger Movements - Need to move the finger before typing
