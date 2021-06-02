@@ -115,6 +115,13 @@ class KeyboardFactory:
                 ["z", "x", "c", "v", "b", "k", "m", ",", ".", "/"]
             ])
 
+        if layout == 'colemak-dh':
+            return KeyboardBuilder().build([
+                ["q", "w", "f", "p", "b", "j", "l", "u", "y", ";"],
+                ["a", "r", "s", "t", "g", "m", "n", "e", "i", "o"],
+                ["z", "x", "c", "d", "v", "k", "h", ",", ".", "/"]
+            ])
+
         if layout == 'halmak':
             return KeyboardBuilder().build([
                 ["w", "l", "r", "b", "z", ";", "q", "u", "d", "j"],
@@ -185,7 +192,7 @@ class KeyboardLayoutReport:
         print(self.row_format.format('Finger Down Movement',self.moves['bottom']))
         print(self.row_format.format('Finger Left Movement',self.moves['left']))
         print(self.row_format.format('Finger Right Movement',self.moves['right']))
-        
+
         print(self.row_format.format('Finger Top Right Movement',self.moves['top right']))
         print(self.row_format.format('Finger Top Left Movement',self.moves['top left']))
         print(self.row_format.format('Finger Bottom Right  Movement',self.moves['bottom right']))
@@ -195,7 +202,7 @@ class KeyboardLayoutReport:
 class SummayReport:
     def __init__(self, keyboard_reports: List[KeyboardLayoutReport]) -> None:
         self.keyboard_reports = keyboard_reports
-    
+
     def print_table(self):
         table: List[List[int]] = [[] for x in range(len(self.keyboard_reports))]
         report_names: List[str] = []
@@ -246,6 +253,7 @@ def main():
         KeyboardLayoutReport('WORKMAN', KeyboardFactory.get_layout('workman')),
         KeyboardLayoutReport('HALMAK', KeyboardFactory.get_layout('halmak')),
         KeyboardLayoutReport('COLEMAK', KeyboardFactory.get_layout('colemak')),
+        KeyboardLayoutReport('COLEMAK-DH', KeyboardFactory.get_layout('colemak-dh')),
     ]
 
     for line in sys.stdin:

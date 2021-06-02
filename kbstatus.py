@@ -117,6 +117,13 @@ class KeyboardFactory:
                 ["z", "x", "c", "v", "b", "k", "m", ",", ".", "/"]
             ])
 
+        if layout == 'colemak-dh':
+            return KeyboardBuilder().build([
+                ["q", "w", "f", "p", "b", "j", "l", "u", "y", ";"],
+                ["a", "r", "s", "t", "g", "m", "n", "e", "i", "o"],
+                ["z", "x", "c", "d", "v", "k", "h", ",", ".", "/"]
+            ])
+
         if layout == 'halmak':
             return KeyboardBuilder().build([
                 ["w", "l", "r", "b", "z", ";", "q", "u", "d", "j"],
@@ -187,7 +194,7 @@ class StatusReport:
         print(self.row_format.format('Finger Down Movement',self.moves['bottom']))
         print(self.row_format.format('Finger Left Movement',self.moves['left']))
         print(self.row_format.format('Finger Right Movement',self.moves['right']))
-        
+
         print(self.row_format.format('Finger Top Right Movement',self.moves['top right']))
         print(self.row_format.format('Finger Top Left Movement',self.moves['top left']))
         print(self.row_format.format('Finger Bottom Right  Movement',self.moves['bottom right']))
@@ -203,6 +210,7 @@ def main():
         StatusReport('WORKMAN', KeyboardFactory.get_layout('workman')),
         StatusReport('HALMAK', KeyboardFactory.get_layout('halmak')),
         StatusReport('COLEMAK', KeyboardFactory.get_layout('colemak')),
+        StatusReport('COLEMAK-DH', KeyboardFactory.get_layout('colemak-dh')),
     ]
 
     for line in sys.stdin:
