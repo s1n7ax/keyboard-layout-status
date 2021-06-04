@@ -12,8 +12,9 @@ Supported keyboard layouts are
 
 * qwerty
 * dvorak
-* halmak 
+* halmak
 * colemak
+* colemak-dh
 * workman
 
 ## Prerequisites
